@@ -1,0 +1,92 @@
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Styles for teacher_upload_lesson.php */
+.lesson-upload-form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.lesson-upload-form h2 {
+    margin-bottom: 20px;
+}
+
+.lesson-upload-form input[type="text"],
+.lesson-upload-form textarea,
+.lesson-upload-form input[type="file"],
+.lesson-upload-form button {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.lesson-upload-form button[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Shared styles for activity and lessonment pages */
+.lesson-list {
+    /* Add these lines to display lesson cards from left to right */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.lesson-card {
+    flex-basis: calc(33.33% - 20px);
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.lesson-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.lesson-description, .lesson-subject {
+    margin-bottom: 10px;
+}
+
+.lesson-download-btn {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.lesson-upload-btn {
+    margin-top: 20px;
+}
+
+/* Specific CSS for the Upload lesson page */
+.upload-lesson-page .content {
+    flex: 1; /* Take up the remaining space on the Upload lesson page */
+    padding: 20px; /* Adjust padding as needed */
+}
+
+.upload-lesson-page .announcement-section {
+    flex: 0; /* Prevent the announcement section from growing on the Upload lesson page */
+    padding: 20px; /* Adjust padding as needed */
+}

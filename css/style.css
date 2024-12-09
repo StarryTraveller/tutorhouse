@@ -1,0 +1,152 @@
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  flex: 1;
+  padding: 30px;
+  display: flex;
+}
+
+.footer {
+  background-color: #98c1d9;
+  padding: 15px;
+  flex-shrink: 0;
+}
+
+.container-wrapper {
+  flex: 1;
+  display: flex;
+  flex-direction: row; /* Change the flex-direction to row */
+}
+
+.sidebar {
+  width: 250px; /* Adjust the width as needed */
+  background-color: #293241;
+  padding: 15px;
+  user-select: none;
+}
+
+.main-content {
+  flex: 3; /* Adjust the flex value as needed */
+  padding-right: 30px; /* Add some spacing between the main content and announcement section */
+  border-right: 1px solid #dee2e6; /* Add a border to separate the main content and announcement section */
+}
+
+.announcement-section {
+  flex: 1; /* Adjust the flex value as needed */
+  padding-left: 30px; /* Add some spacing */
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start; /* Align items to the top */
+  border-top: 1px solid #dee2e6; /* Add a border above the cards */
+  padding-top: 20px; /* Add some spacing above the cards */
+}
+
+.card {
+  margin-bottom: 15px; /* Add some spacing between the cards */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: arial;
+}
+
+.wrapper {
+  position: relative;
+}
+
+.text-muted {
+  color: #adb5bd !important;
+}
+
+ul {
+  padding-bottom: 20px;
+}
+
+ul li a img {
+  background: #66bb6a;
+  top: 0;
+  border: none;
+  width: 20px;
+}
+
+.sidebar ul li {
+  padding: 15px;
+}
+
+.sidebar ul li a {
+  color: #ffffff;
+  display: block;
+}
+
+.sidebar ul li a .fas {
+  width: 30px;
+  color: #bdb8d7 !important;
+}
+
+i.fas.fa-home:hover,
+i.fas.fa-file-invoice:hover,
+i.fas.fa-video:hover,
+i.fas.fa-id-badge:hover,
+i.fas.fa-external-link-alt:hover,
+i.fas.fa-code:hover,
+i.far.fa-calendar-alt:hover,
+i.far.fa-credit-card:hover {
+  color: #304ffe !important;
+}
+
+.sidebar ul li a .far {
+  width: 30px;
+  color: #bdb8d7 !important;
+}
+
+.sidebar ul li:hover {
+  background: #000;
+}
+
+.sidebar ul li a:hover {
+  text-decoration: none;
+}
+
+.card-container .card {
+  width: calc(33% - 20px);
+  margin-bottom: 20px;
+  border: 1px solid #dee2e6; /* Add a border to the cards */
+  border-radius: 4px;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card-container .card .card-title {
+  font-size: 20px;
+}
+
+.card-container .card .card-text {
+  font-size: 14px;
+}
+
+.card-container .card .btn {
+  font-size: 14px;
+  padding: 6px 12px;
+}
+
+.card-container .card + .card {
+  margin-left: 20px; /* Add spacing between cards */
+}
+.card-container .card .card-img-top {
+  object-fit: cover;
+  height: 150px; /* Adjust the height as needed */
+  width: 100%; /* Set the width to fill the container */
+            
+}

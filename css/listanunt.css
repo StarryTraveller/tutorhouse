@@ -1,0 +1,91 @@
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+  }
+
+  /* Style the title */
+  .modal-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #007bff;
+    padding: 10px;
+    text-align: center;
+  }
+
+  /* Style the content */
+  .modal-content .content {
+    font-size: 18px;
+  }
+
+  /* Style the close button */
+  .modal-content .close {
+    color: #aaa;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start; /* Align items to the top */
+  margin-bottom: 5px; /* Add some space between title and buttons */
+}
+
+.card-title {
+  flex: 1; /* Allow the title to take all the available space */
+}
+
+.card-buttons {
+  display: flex;
+  flex-direction: column; /* Align buttons vertically */
+  align-items: flex-end; /* Align buttons to the rightmost part */
+}
+
+/* Style the individual button */
+.card-buttons button {
+  margin-top: 5px; /* Add some space between buttons */
+}
+
+/* Center the cards within the card-wrapper */
+.announcement-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px; /* Add some space from the top */
+  }
+
+  .card {
+    width: 800px; /* Set the width of the card */
+    margin-bottom: 10px; /* Add some space between cards */
+    /* Add box-shadow and other card styles as needed */
+  }
+
+/* Justify the content below the title */
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
